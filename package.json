@@ -1,15 +1,26 @@
 {
-  "name": "hsl-to-hex",
+  "name": "@lenodeoliveira/hsl-to-hex",
   "version": "1.0.0",
-  "description": "",
+  "description": "Convert HSL colors to RGB colors in hex format.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tap --cov test",
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com-lenodeoliveira:lenodeoliveira/node-cookbook.git"
   },
   "author": "Lennon de Oliveira",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0",
+    "tap": "^16.2.0"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
